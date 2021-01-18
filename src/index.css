@@ -11,3 +11,48 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: 'Brotherline';
+  src: local('Brotherline'), url(./fonts/Brotherline.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: "Ranille";
+  src: local('Ranille'), url(./fonts/Ranille.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: "Rockabye";
+  src: local('Rockabye'), url(./fonts/Rockabye.otf) format('opentype');
+}
+
+@font-face {
+  font-family: "Retrophilia";
+  src: local('Retrophilia'), url(./fonts/Retrophilia.otf) format('opentype')
+}
+
+.nav ul {
+  list-style-type: none;
+  /* margin: 0 auto; */
+  /* padding: 0; */
+  overflow: auto;
+  background-color: #153630;
+  /* text-align: justify; */
+  width: 100%;
+}
+
+.nav li { 
+  display: inline;
+  /* text-align: center; */
+  margin: 0;
+  padding: 0;
+}
+
+.nav li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  width: 16%;
+  text-decoration: none;
+}
