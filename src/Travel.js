@@ -20,6 +20,17 @@ class Travel extends Component {
                 </ul>
                 </div>
                 Travel
+                <div style={{height: "50vmin"}}></div>
+                <footer className="hero-footer">
+                    <div className="content has-text-centered">
+                    Made with <a href="https://jordangamache.io" style={{textDecoration: "none", color: "black"}}><i className="fa fa-heart" style={{color: "rgb(235, 43, 86)"}}></i> & <i className="fa fa-coffee" style={{color: "rgb(44, 31, 22)"}}></i></a> in Orlando
+                    <div className=" content has-text-centered">
+                    <a href="https://bulma.io">
+                    <img src="https://bulma.io/images/made-with-bulma--black.png" alt="Made with Bulma" width="128" height="24" />
+                    </a>
+                    </div>
+					</div>
+                </footer>
             </div>
         );
     }

@@ -22,6 +22,17 @@ class Menu extends Component {
                 <div style={{backgroundColor: "#eedfdd"}}>
                     <iframe title="menu" src="https://docs.google.com/forms/d/e/1FAIpQLSdp2AbCru1p4ERRS0i7cpmpnZ1H3u5dJgE3Y7LQDMzEh6nU1g/viewform?embedded=true" width="100%" height="2307" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
                 </div>
+                <div style={{height: "50vmin"}}></div>
+                <footer className="hero-footer">
+                    <div className="content has-text-centered">
+                    Made with <a href="https://jordangamache.io" style={{textDecoration: "none", color: "black"}}><i className="fa fa-heart" style={{color: "rgb(235, 43, 86)"}}></i> & <i className="fa fa-coffee" style={{color: "rgb(44, 31, 22)"}}></i></a> in Orlando
+                    <div className=" content has-text-centered">
+                    <a href="https://bulma.io">
+                    <img src="https://bulma.io/images/made-with-bulma--black.png" alt="Made with Bulma" width="128" height="24" />
+                    </a>
+                    </div>
+                </div>
+                </footer>
             </div>
         );
     }

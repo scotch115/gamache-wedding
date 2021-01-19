@@ -21,7 +21,19 @@ function App() {
           <li><a href="/photos">Photos</a></li>
         </ul>
       </div>
-      <div style={{display: 'flex', justifyContent: "center"}}><img src={frontpage} alt="us" style={{width: "65vw", height: "50vw"}}/> </div>
+      <div style={{display: 'flex', justifyContent: "center"}}><img src={frontpage} alt="us" style={{width: "65vw", height: "50vw"}}/> 
+      </div>
+      <div style={{height: "50vmin"}}></div>
+      <footer className="hero-footer">
+			    <div className="content has-text-centered">
+			     Made with <a href="https://jordangamache.io" style={{textDecoration: "none", color: "black"}}><i className="fa fa-heart" style={{color: "rgb(235, 43, 86)"}}></i> & <i className="fa fa-coffee" style={{color: "rgb(44, 31, 22)"}}></i></a> in Orlando
+			    <div className=" content has-text-centered">
+			      <a href="https://bulma.io">
+			      <img src="https://bulma.io/images/made-with-bulma--black.png" alt="Made with Bulma" width="128" height="24" />
+			      </a>
+			    </div>
+					</div>
+      </footer>
     </div>
   );
 }
