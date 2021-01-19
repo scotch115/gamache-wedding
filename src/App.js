@@ -21,7 +21,7 @@ function App() {
           <li><a href="/photos">Photos</a></li>
         </ul>
       </div>
-      <div style={{display: 'flex', justifyContent: "center"}}><img src={frontpage} alt="us" style={{width: "60vw", height: "50vw"}}/> </div>
+      <div style={{display: 'flex', justifyContent: "center"}}><img src={frontpage} alt="us" style={{width: "65vw", height: "50vw"}}/> </div>
     </div>
   );
 }
