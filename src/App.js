@@ -8,8 +8,8 @@ class App extends Component {
 
   handleAddToHomescreenClick = () => {
     alert(`
-      1. Open Share menu
-      2. Tap on "Add to Home Screen" button`);
+ 1. Open Share menu
+ 2. Tap on "Add to Home Screen" button`);
   };
   
   render() { 
@@ -39,7 +39,7 @@ class App extends Component {
               Made with <a href="https://jordangamache.io" style={{textDecoration: "none", color: "black"}}><i className="fa fa-heart" style={{color: "rgb(235, 43, 86)"}}></i> & <i className="fa fa-coffee" style={{color: "rgb(44, 31, 22)"}}></i></a> in Orlando
               </div>
           </footer>
-          <AddToHomescreen onAddToHomescreenClick={this.handleAddToHomescreenClick} />
+          <AddToHomescreen title={'Add to your homescreen ↓'} onAddToHomescreenClick={this.handleAddToHomescreenClick} />
         </div>
       );
     }
