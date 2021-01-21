@@ -56,3 +56,15 @@ code {
   width: 16%;
   text-decoration: none;
 }
+
+
+.flights {
+  display: block;
+  overflow: auto;
+}
+
+.flights a {
+  float: left;
+  text-align: center;
+  width: 50%;
+}

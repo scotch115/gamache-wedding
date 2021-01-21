@@ -15,7 +15,7 @@ class Schedule extends Component {
                 <li><a href="/venue">Venue </a></li>
                 <li><a href="/travel">Travel</a></li>
                 <li><a href="/menu">Menu</a></li>
-                <li><a href="/">Registry</a></li>
+                <li><a href="https://www.zola.com/registry/jordantorri">Registry</a></li>
                 <li><a href="/photos">Photos</a></li>
                 </ul>
             </div>

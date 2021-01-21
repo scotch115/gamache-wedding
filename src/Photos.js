@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 import './App.css';
 import cute from './images/cute_line.jpeg';
+import Gallery from 'react-photo-gallery';
+import { photo } from './photo';
 
 class Photos extends Component {
+
     render() { 
         return (  
             <div>          
@@ -15,11 +18,11 @@ class Photos extends Component {
             <li><a href="/venue">Venue </a></li>
             <li><a href="/travel">Travel</a></li>
             <li><a href="/menu">Menu</a></li>
-            <li><a href="/">Registry</a></li>
+            <li><a href="https://www.zola.com/registry/jordantorri">Registry</a></li>
             <li><a href="/photos">Photos</a></li>
             </ul>
             </div>
-                Photos coming soon!
+                <div style={{width: '100%'}}><Gallery photos={photo} direction={"column"}/></div>
                 <div style={{height: "50vmin"}}></div>
                 <footer className="hero-footer">
                     <div className="content has-text-centered">
