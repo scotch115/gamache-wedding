@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import cute from './images/cute_line.jpeg';
-import Gallery from 'react-photo-gallery';
-import { photo } from './photo';
+
 
 class Photos extends Component {
 
@@ -22,7 +21,7 @@ class Photos extends Component {
             <li><a href="/photos">Photos</a></li>
             </ul>
             </div>
-                <div style={{width: '100%'}}><Gallery photos={photo} direction={"column"}/></div>
+                Photos of us coming soon!
                 <div style={{height: "50vmin"}}></div>
                 <footer className="hero-footer">
                     <div className="content has-text-centered">
