@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 import cute from './images/cute_line.jpeg';
+import Gallery from 'react-photo-gallery';
+import { cute_photo } from './cutephoto';
 
 
 class Photos extends Component {
@@ -21,7 +23,10 @@ class Photos extends Component {
             <li><a href="/photos">Photos</a></li>
             </ul>
             </div>
-                Photos of us coming soon!
+            <div style={{width: '100%'}}>
+                <p className="has-text-centered container" style={{fontSize: "2vw", padding: '1vw'}}>✨ More photos to come! ✨</p>
+                <Gallery photos={cute_photo} direction={"column"}/>
+            </div>
                 <div style={{height: "50vmin"}}></div>
                 <footer className="hero-footer">
                     <div className="content has-text-centered">
