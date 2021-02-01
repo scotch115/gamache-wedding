@@ -1,26 +1,19 @@
 import React, { Component } from 'react';
 import './App.css';
-import cute from './images/cute_line.jpeg';
+import Header from './Header';
 
 class Menu extends Component {
     render() { 
         return (  
             <div>
                 <div style={{backgroundColor: "#153630", color: "white", textAlign: "center", paddingTop: "2vh", paddingBottom: "1vh"}}>
-                    <img src={cute} alt="cute" style={{width: "50vw"}}/>
-                    <div style={{fontSize: '10vmin', fontFamily: "Rockabye", color: "#CCA497"}}> <a href="/" style={{textDecoration: 'none', color: '#CCA497'}}>JORDAN & TORRI</a></div>
-                    {/* <div style={{fontSize: '10vmin', fontFamily: "Brotherline", color: "#CCA497"}}>Jordan & Torri</div> */}
-                    <ul className="nav"  style={{ fontFamily: "Ranille", fontSize: '3vmin'}}>
-                    <li><a href="/schedule">Schedule</a></li>
-                    <li><a href="/venue">Venue </a></li>
-                    <li><a href="/travel">Travel</a></li>
-                    <li><a href="/menu">Menu</a></li>
-                    <li><a href="https://www.zola.com/registry/jordantorri">Registry</a></li>
-                    <li><a href="/photos">Photos</a></li>
-                    </ul>
+                    <Header />
                 </div>
-                <div style={{backgroundColor: "#eedfdd"}}>
-                    <iframe title="menu" src="https://docs.google.com/forms/d/e/1FAIpQLSdp2AbCru1p4ERRS0i7cpmpnZ1H3u5dJgE3Y7LQDMzEh6nU1g/viewform?embedded=true" width="100%" height="2307" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                <div style={{display: 'flex', background: 'black', textAlign: 'center', overflow: 'hidden', position: 'relative'}}>
+                    <div style={{backgroundColor: "#eedfdd", objectFit: "cover", opacity: '0.2', width: "100vw"}}>
+                        <iframe title="menu" src="https://docs.google.com/forms/d/e/1FAIpQLSdp2AbCru1p4ERRS0i7cpmpnZ1H3u5dJgE3Y7LQDMzEh6nU1g/viewform?embedded=true" width="100%" height="2307" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                    </div>
+                    <div className="has-text-centered" style={{position: "absolute", color: "white", top: "35vh", left: "50%", transform: 'translate(-50%, -50%)', fontSize: '4vw', fontFamily: 'Ranille'}}>Check back later to see if the menu has been finalized yet!</div>    
                 </div>
                 <div style={{height: "50vmin"}}></div>
                 <footer className="hero-footer">

@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Schedule from './Schedule';
-import Venue from './Venue';
+// import Schedule from './Schedule'; // Temporarily removed as site is restricted
+// import Venue from './Venue'; 
 import Travel from './Travel';
 import Photos from './Photos';
 import Menu from './Menu';
@@ -15,8 +15,8 @@ const routing = (
     <div>
       <Switch>
         <Route exact path="/" component={App}/> 
-        <Route path="/schedule" component={Schedule}/>
-        <Route path="/venue" component={Venue} />
+        {/* <Route path="/schedule" component={Schedule}/> */}
+        {/* <Route path="/venue" component={Venue} /> */}
         <Route path="/travel" component={Travel} />
         <Route path="/photos" component={Photos} />
         <Route path="/menu" component={Menu} />

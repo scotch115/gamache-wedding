@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import cute from './images/cute_line.jpeg';
+import Header from './Header';
 import mountains from './images/mountains.png';
 import { Map, Marker, GoogleApiWrapper } from 'google-maps-react';
 
@@ -10,17 +10,7 @@ class Travel extends Component {
         return (  
             <div>
                 <div style={{backgroundColor: "#153630", color: "white", textAlign: "center", paddingTop: "2vh", paddingBottom: "1vh"}}>
-                <img src={cute} alt="cute" style={{width: "50vw"}}/>
-                <div style={{fontSize: '10vmin', fontFamily: "Rockabye", color: "#CCA497"}}> <a href="/" style={{textDecoration: 'none', color: '#CCA497'}}>JORDAN & TORRI</a></div>
-                {/* <div style={{fontSize: '10vmin', fontFamily: "Brotherline", color: "#CCA497"}}>Jordan & Torri</div> */}
-                <ul className="nav"  style={{ fontFamily: "Ranille", fontSize: '3vmin'}}>
-                <li><a href="/schedule">Schedule</a></li>
-                <li><a href="/venue">Venue </a></li>
-                <li><a href="/travel">Travel</a></li>
-                <li><a href="/menu">Menu</a></li>
-                <li><a href="https://www.zola.com/registry/jordantorri">Registry</a></li>
-                <li><a href="/photos">Photos</a></li>
-                </ul>
+                <Header />
                 </div>
                 <div style={{height: '20%' , width: '100%'}}><img src={mountains} alt="mountains"/></div>
                 <div className="flights" style={{fontSize: '4vmin'}}>
