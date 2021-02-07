@@ -3,6 +3,7 @@ import './App.css';
 import homepage from './images/homepage.JPG';
 import AddToHomescreen from 'react-add-to-homescreen';
 import Header from './Header';
+import mountains from './images/brown_mountains.png';
 
 class App extends Component {
 
@@ -29,7 +30,9 @@ class App extends Component {
           <div className="has-text-centered">
             More details to follow! Check back in as the date gets closer for access to other areas of the site :) 
           </div>
-          <div style={{height: "50vh"}}></div>
+          <div >
+            <img src={mountains} alt='mountains' style={{width: '100vw', height: '100%'}}/>
+          </div>
           <footer className="hero-footer">
               <div className="content has-text-centered">
               Made with <a href="https://jordangamache.io" style={{textDecoration: "none", color: "black"}}><i className="fa fa-heart" style={{color: "rgb(235, 43, 86)"}}></i> & <i className="fa fa-coffee" style={{color: "rgb(44, 31, 22)"}}></i></a> in Orlando
