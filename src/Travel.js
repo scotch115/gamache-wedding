@@ -27,12 +27,11 @@ class Travel extends Component {
                 </div>
                 <div style={{height: '10vw'}}></div>
                 <AppleMaps 
-                    token='eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjY4NDZZV1E1VVkifQ.eyJpc3MiOiJGVDRBQVhXOU4zIiwiaWF0IjoxNjEzMDc1NDU1LCJleHAiOjE4OTY5ODU4NTV9.qHiQjt8fXJsDW_BDAWeEOYfEHOs1PyGxp2CsToWrJSuWmpkjlu1eAnhypyn3f0WgnRTB62Sk6rQX-_vlEVFaUg'
+                    token='eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjY4NDZZV1E1VVkifQ.eyJpc3MiOiJGVDRBQVhXOU4zIiwiaWF0IjoxNjEzMDgwMTcxLCJleHAiOjE2NzczNjE3NzF9.WwZ6qD-CnW417UVswV1AWAdp9Ziw2sJorE0Lh4iHkoOCI9YRV3XvhEOBU3tsL83HNeGig11APGaeQrgYJH6Y4Q'
                     latitude={38.820302}
                     longitude={-104.784939}
                     zoomLevel={5}
                     height={mapSize}
-                    darkMode={true}
                 >
                     <Annotation
                         latitude={38.790302}
@@ -40,8 +39,7 @@ class Travel extends Component {
                         color="#153630"
                         title="Gamache Wedding"
                         subtitle="Cañon Retreat"
-                        // glyphText="⚭"
-                        glyphText="💒"
+                        glyphText="⚭"
                     />
                     <Annotation
                         latitude={38.827405}
@@ -49,7 +47,7 @@ class Travel extends Component {
                         color="#153630"
                         title="Kinship Landing"
                         subtitle="Hotel"
-                        glyphText="🏨"
+                        glyphText="⌂"
                     />
                     <Annotation
                         latitude={38.79884627225451}
@@ -57,7 +55,7 @@ class Travel extends Component {
                         color="#153630"
                         title="COS Airport"
                         subtitle="Airport"
-                        glyphText="🛩"
+                        glyphText="✈︎"
                     />
                 </AppleMaps>
                 <div style={{height: "50vh"}}></div>
