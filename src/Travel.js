@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Header from './Header';
 import mountains from './images/mountains.png';
-import { Map, Marker, GoogleApiWrapper } from 'google-maps-react';
+import { AppleMaps, Annotation } from 'react-apple-mapkitjs';
 
 
 class Travel extends Component {
@@ -18,10 +18,23 @@ class Travel extends Component {
                     <a style={{textDecoration: 'none', color: 'black'}} href="https://www.google.com/travel/flights/search?tfs=CBwQAhoeagcIARIDSUxNEgoyMDIxLTA3LTExcgcIARIDQ09TGh5qBwgBEgNDT1MSCjIwMjEtMDctMTRyBwgBEgNJTE1wAYIBCwj___________8BQAFIAZgBAQ&tfu=GgA">Wilmington ✈️ Colorado Springs</a>
                 </div>
                 <div style={{height: '10vw'}}></div>
-                <Map google={this.props.google} style={{width: '100%', height: '80vmin'}} zoom={15} initialCenter={{lat: '38.790302', lng: '-104.864939'}} >
-                <Marker />
-                </Map>
-                <div style={{height: "100vh"}}></div>
+                <AppleMaps 
+                    token='eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjY4NDZZV1E1VVkifQ.eyJpc3MiOiJGVDRBQVhXOU4zIiwiaWF0IjoxNjEzMDc1NDU1LCJleHAiOjE4OTY5ODU4NTV9.qHiQjt8fXJsDW_BDAWeEOYfEHOs1PyGxp2CsToWrJSuWmpkjlu1eAnhypyn3f0WgnRTB62Sk6rQX-_vlEVFaUg'
+                    latitude={38.790302}
+                    longitude={-104.864939}
+                    zoomLevel={6}
+                    darkMode={true}
+                >
+                    <Annotation
+                        latitude={38.790302}
+                        longitude={-104.864939}
+                        color="#153630"
+                        title="Gamache Wedding"
+                        subtitle="Cañon Retreat"
+                        glyphText="⚭"
+                    />
+                </AppleMaps>
+                <div style={{height: "50vh"}}></div>
                 <footer className="hero-footer">
                     <div className="content has-text-centered">
                     Made with <a href="https://jordangamache.io" style={{textDecoration: "none", color: "black"}}><i className="fa fa-heart" style={{color: "rgb(235, 43, 86)"}}></i> & <i className="fa fa-coffee" style={{color: "rgb(44, 31, 22)"}}></i></a> in Orlando
@@ -32,7 +45,9 @@ class Travel extends Component {
     }
 }
  
-export default GoogleApiWrapper({
-    apiKey: 'AIzaSyD3HrSwb8dhCSAtLIySqHUgAca5vkSXvL0',
-    version: 3.31
-})(Travel);
+// export default GoogleApiWrapper({
+//     apiKey: 'AIzaSyD3HrSwb8dhCSAtLIySqHUgAca5vkSXvL0',
+//     version: 3.31
+// })(Travel);
+
+export default Travel;
