@@ -30,7 +30,7 @@ class Travel extends Component {
                     token='eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjY4NDZZV1E1VVkifQ.eyJpc3MiOiJGVDRBQVhXOU4zIiwiaWF0IjoxNjEzMDc1NDU1LCJleHAiOjE4OTY5ODU4NTV9.qHiQjt8fXJsDW_BDAWeEOYfEHOs1PyGxp2CsToWrJSuWmpkjlu1eAnhypyn3f0WgnRTB62Sk6rQX-_vlEVFaUg'
                     latitude={38.820302}
                     longitude={-104.784939}
-                    zoomLevel={6}
+                    zoomLevel={5}
                     height={mapSize}
                     darkMode={true}
                 >
@@ -48,7 +48,7 @@ class Travel extends Component {
                         longitude={-104.821457}
                         color="#153630"
                         title="Kinship Landing"
-                        subtitle="Downtown"
+                        subtitle="Hotel"
                         glyphText="🏨"
                     />
                     <Annotation
@@ -56,7 +56,7 @@ class Travel extends Component {
                         longitude={-104.70065547555635}
                         color="#153630"
                         title="COS Airport"
-                        subtitle="Downtown"
+                        subtitle="Airport"
                         glyphText="🛩"
                     />
                 </AppleMaps>
