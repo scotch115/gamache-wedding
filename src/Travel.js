@@ -12,7 +12,7 @@ class Travel extends Component {
             mapSize = 800;
             console.log(window.innerWidth);
         } else {
-            mapSize = 300;
+            mapSize = 400;
             console.log(window.innerWidth);
         }
         return (  
@@ -28,8 +28,8 @@ class Travel extends Component {
                 <div style={{height: '10vw'}}></div>
                 <AppleMaps 
                     token='eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjY4NDZZV1E1VVkifQ.eyJpc3MiOiJGVDRBQVhXOU4zIiwiaWF0IjoxNjEzMDc1NDU1LCJleHAiOjE4OTY5ODU4NTV9.qHiQjt8fXJsDW_BDAWeEOYfEHOs1PyGxp2CsToWrJSuWmpkjlu1eAnhypyn3f0WgnRTB62Sk6rQX-_vlEVFaUg'
-                    latitude={38.790302}
-                    longitude={-104.864939}
+                    latitude={38.820302}
+                    longitude={-104.784939}
                     zoomLevel={6}
                     height={mapSize}
                     darkMode={true}
@@ -40,7 +40,24 @@ class Travel extends Component {
                         color="#153630"
                         title="Gamache Wedding"
                         subtitle="Cañon Retreat"
-                        glyphText="⚭"
+                        // glyphText="⚭"
+                        glyphText="💒"
+                    />
+                    <Annotation
+                        latitude={38.827405}
+                        longitude={-104.821457}
+                        color="#153630"
+                        title="Kinship Landing"
+                        subtitle="Downtown"
+                        glyphText="🏨"
+                    />
+                    <Annotation
+                        latitude={38.79884627225451}
+                        longitude={-104.70065547555635}
+                        color="#153630"
+                        title="COS Airport"
+                        subtitle="Downtown"
+                        glyphText="🛩"
                     />
                 </AppleMaps>
                 <div style={{height: "50vh"}}></div>
