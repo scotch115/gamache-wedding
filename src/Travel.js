@@ -7,6 +7,14 @@ import { AppleMaps, Annotation } from 'react-apple-mapkitjs';
 
 class Travel extends Component {
     render() { 
+        var mapSize;
+        if (window.innerWidth > 500) {
+            mapSize = 800;
+            console.log(window.innerWidth);
+        } else {
+            mapSize = 300;
+            console.log(window.innerWidth);
+        }
         return (  
             <div>
                 <div style={{backgroundColor: "#153630", color: "white", textAlign: "center", paddingTop: "2vh", paddingBottom: "1vh"}}>
@@ -23,6 +31,7 @@ class Travel extends Component {
                     latitude={38.790302}
                     longitude={-104.864939}
                     zoomLevel={6}
+                    height={mapSize}
                     darkMode={true}
                 >
                     <Annotation
