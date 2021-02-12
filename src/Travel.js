@@ -25,7 +25,6 @@ class Travel extends Component {
                     <a style={{textDecoration: 'none', color: 'black'}} href="https://www.google.com/travel/flights/search?tfs=CBwQAhoeagcIARIDTUNPEgoyMDIxLTA3LTExcgcIARIDQ09TGh5qBwgBEgNDT1MSCjIwMjEtMDctMTRyBwgBEgNNQ09wAYIBCwj___________8BQAFIAZgBAQ&tfu=GgA">Orlando ✈️ Colorado Springs</a>
                     <a style={{textDecoration: 'none', color: 'black'}} href="https://www.google.com/travel/flights/search?tfs=CBwQAhoeagcIARIDSUxNEgoyMDIxLTA3LTExcgcIARIDQ09TGh5qBwgBEgNDT1MSCjIwMjEtMDctMTRyBwgBEgNJTE1wAYIBCwj___________8BQAFIAZgBAQ&tfu=GgA">Wilmington ✈️ Colorado Springs</a>
                 </div>
-                <div style={{height: '10vw'}}></div>
                 <AppleMaps 
                     token='eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjY4NDZZV1E1VVkifQ.eyJpc3MiOiJGVDRBQVhXOU4zIiwiaWF0IjoxNjEzMDgwMTcxLCJleHAiOjE2NzczNjE3NzF9.WwZ6qD-CnW417UVswV1AWAdp9Ziw2sJorE0Lh4iHkoOCI9YRV3XvhEOBU3tsL83HNeGig11APGaeQrgYJH6Y4Q'
                     latitude={38.820302}
