@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import homepage from './images/homepage.JPG';
 import AddToHomescreen from 'react-add-to-homescreen';
-import Header from './Header';
+import Header from './Components/Header';
 import mountains from './images/brown_mountains.png';
 
 class App extends Component {

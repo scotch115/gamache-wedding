@@ -4,10 +4,10 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 // import Schedule from './Schedule'; // Temporarily removed as site is restricted
-// import Venue from './Venue'; 
-import Travel from './Travel';
-import Photos from './Photos';
-import Menu from './Menu';
+import Venue from './Components/Venue'; 
+import Travel from './Components/Travel';
+import Photos from './Components/Photos';
+import Menu from './Components/Menu';
 import { Route, BrowserRouter, Switch } from 'react-router-dom';
 
 const routing = (
@@ -16,7 +16,7 @@ const routing = (
       <Switch>
         <Route exact path="/" component={App}/> 
         {/* <Route path="/schedule" component={Schedule}/> */}
-        {/* <Route path="/venue" component={Venue} /> */}
+        <Route path="/venue" component={Venue} />
         <Route path="/travel" component={Travel} />
         <Route path="/photos" component={Photos} />
         <Route path="/menu" component={Menu} />

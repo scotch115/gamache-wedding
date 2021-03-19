@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import './App.css';
+import '../App.css';
 import Header from './Header';
 import Gallery from 'react-photo-gallery';
-import { cute_photo } from './cutephoto';
+import { cute_photo } from '../cutephoto';
 
 
 class Photos extends Component {

@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import './App.css';
+import '../App.css';
 import Header from './Header';
 import Gallery from 'react-photo-gallery';
-import { photo } from './photo';
+import { photo } from '../photo';
 
 class Venue extends Component {
 

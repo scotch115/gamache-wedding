@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import './App.css';
+import '../App.css';
 import Header from './Header';
-import mountains from './images/mountains.png';
+import mountains from '../images/mountains.png';
 import { AppleMaps, Annotation } from 'react-apple-mapkitjs';
 
 
