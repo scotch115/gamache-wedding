@@ -2,19 +2,39 @@ import React, { Component } from 'react';
 import '../App.css';
 import Header from './Header';
 import mountains from '../images/mountains.png';
-import { AppleMaps, Annotation } from 'react-apple-mapkitjs';
+import { Map, Marker, GoogleApiWrapper, InfoWindow } from 'google-maps-react';
 
 
 class Travel extends Component {
+
+    state = {
+        showingInfoWindow: false,
+        activeMarker: {},
+        selectedPlace: {}
+    };
+
+
+    onMarkerClick = (props, marker, e) =>
+    this.setState({
+      selectedPlace: props,
+      activeMarker: marker,
+      showingInfoWindow: true
+    });
+
+
     render() { 
         var mapSize;
+        var zoomLevel;
         if (window.innerWidth > 500) {
             mapSize = 800;
+            zoomLevel = 13;
             console.log(window.innerWidth);
         } else {
             mapSize = 400;
+            zoomLevel = 10;
             console.log(window.innerWidth);
         }
+
         return (  
             <div>
                 <div style={{backgroundColor: "#153630", color: "white", textAlign: "center", paddingTop: "2vh", paddingBottom: "1vh"}}>
@@ -25,38 +45,31 @@ class Travel extends Component {
                     <a style={{textDecoration: 'none', color: 'black'}} href="https://www.google.com/travel/flights/search?tfs=CBwQAhoeagcIARIDTUNPEgoyMDIxLTA3LTExcgcIARIDQ09TGh5qBwgBEgNDT1MSCjIwMjEtMDctMTRyBwgBEgNNQ09wAYIBCwj___________8BQAFIAZgBAQ&tfu=GgA">Orlando ✈️ Colorado Springs</a>
                     <a style={{textDecoration: 'none', color: 'black'}} href="https://www.google.com/travel/flights/search?tfs=CBwQAhoeagcIARIDSUxNEgoyMDIxLTA3LTExcgcIARIDQ09TGh5qBwgBEgNDT1MSCjIwMjEtMDctMTRyBwgBEgNJTE1wAYIBCwj___________8BQAFIAZgBAQ&tfu=GgA">Wilmington ✈️ Colorado Springs</a>
                 </div>
-                <AppleMaps 
-                    token='eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjY4NDZZV1E1VVkifQ.eyJpc3MiOiJGVDRBQVhXOU4zIiwiaWF0IjoxNjEzMDgwMTcxLCJleHAiOjE2NzczNjE3NzF9.WwZ6qD-CnW417UVswV1AWAdp9Ziw2sJorE0Lh4iHkoOCI9YRV3XvhEOBU3tsL83HNeGig11APGaeQrgYJH6Y4Q'
-                    latitude={38.820302}
-                    longitude={-104.784939}
-                    zoomLevel={5}
-                    height={mapSize}
-                >
-                    <Annotation
-                        latitude={38.790302}
-                        longitude={-104.864939}
-                        color="#153630"
-                        title="Gamache Wedding"
-                        subtitle="Cañon Retreat"
-                        glyphText="⚭"
-                    />
-                    <Annotation
-                        latitude={38.827405}
-                        longitude={-104.821457}
-                        color="#153630"
-                        title="Kinship Landing"
-                        subtitle="Hotel"
-                        glyphText="⌂"
-                    />
-                    <Annotation
-                        latitude={38.79884627225451}
-                        longitude={-104.70065547555635}
-                        color="#153630"
-                        title="COS Airport"
-                        subtitle="Airport"
-                        glyphText="✈︎"
-                    />
-                </AppleMaps>
+                <Map google={this.props.google} style={{width: '100%', height: '80vmin'}} zoom={zoomLevel} initialCenter={{lat: '38.800302', lng: '-104.804939'}} >
+                <Marker 
+                    name={'Cañon Retreat - ⚭'} 
+                    position={{lat: 38.790302, lng: -104.864939}} 
+                    onClick={this.onMarkerClick}
+                />
+                <Marker 
+                    name={'Kinship Landing - ⌂'} 
+                    position={{lat: 38.827405, lng: -104.821457}} 
+                    onClick={this.onMarkerClick}
+                />
+                <Marker 
+                    name={'COS Airport - ✈︎'} 
+                    position={{lat: 38.79884627225451, lng: -104.70065547555635}} 
+                    onClick={this.onMarkerClick}
+                />
+
+                <InfoWindow
+                marker={this.state.activeMarker}
+                visible={this.state.showingInfoWindow}>
+                    <div>
+                    <h1>{this.state.selectedPlace.name}</h1>
+                    </div>
+                </InfoWindow>
+                </Map>
                 <div style={{height: "50vh"}}></div>
                 <footer className="hero-footer">
                     <div className="content has-text-centered">
@@ -68,9 +81,7 @@ class Travel extends Component {
     }
 }
  
-// export default GoogleApiWrapper({
-//     apiKey: 'AIzaSyD3HrSwb8dhCSAtLIySqHUgAca5vkSXvL0',
-//     version: 3.31
-// })(Travel);
-
-export default Travel;
+export default GoogleApiWrapper({
+    apiKey: 'AIzaSyD3HrSwb8dhCSAtLIySqHUgAca5vkSXvL0',
+    version: 3.31
+})(Travel);
