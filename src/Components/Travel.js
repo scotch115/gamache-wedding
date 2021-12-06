@@ -48,7 +48,7 @@ class Travel extends Component {
                 <Map google={this.props.google} style={{width: '100%', height: '80vmin'}} zoom={zoomLevel} initialCenter={{lat: '38.800302', lng: '-104.804939'}} >
                 <Marker 
                     name={'Cañon Retreat - ⚭'} 
-                    position={{lat: 38.791654, lng: -104.863764}} 
+                    position={{lat: 38.791654, lng: -104.863764}}
                     onClick={this.onMarkerClick}
                 />
                 <Marker 
