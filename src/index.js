@@ -8,6 +8,7 @@ import Venue from './Components/Venue';
 import Travel from './Components/Travel';
 import Photos from './Components/Photos';
 import Menu from './Components/Menu';
+import Registry from './Components/Registry';
 import { Route, BrowserRouter, Switch } from 'react-router-dom';
 
 const routing = (
@@ -20,6 +21,7 @@ const routing = (
         <Route path="/travel" component={Travel} />
         <Route path="/photos" component={Photos} />
         <Route path="/menu" component={Menu} />
+        <Route path="/registry" component={Registry} />
       </Switch>
     </div>
   </BrowserRouter>
