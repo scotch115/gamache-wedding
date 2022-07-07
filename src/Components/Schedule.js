@@ -61,6 +61,7 @@ export const Schedule = () => {
                                 setShowDialog(true);
                             }
                         }}
+                        longPressDelay={0}
                         // like '14:30'
                         eventTimeFormat={{
                             hour: '2-digit',
