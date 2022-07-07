@@ -54,7 +54,7 @@ export const Schedule = () => {
                         }}
                         eventClick={(e) => {
                             if (
-                                e.el.outerText === '11:00 - 13:30\nFun Group Activity #2 (click me!)' ||
+                                e.el.outerText === '11:00 - 01:30\nFun Group Activity #2 (click me!)' ||
                                 e.el.outerText === '11:00\nFun Group Activity #2 (click me!)'
                             ) {
                                 // Download Garden of the Gods PDF trail map
