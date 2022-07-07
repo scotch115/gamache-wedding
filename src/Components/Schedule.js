@@ -25,7 +25,7 @@ export const Schedule = () => {
                     style={{
                         position: 'relative',
                         left: '5%',
-                        width: '80vw'
+                        width: '90vw'
                     }}
                 >
                     <FullCalendar
@@ -76,7 +76,7 @@ export const Schedule = () => {
                             { title: 'Fun Group Activity #1', start: '2022-07-11T21:30:00', end: '2022-07-11T23:00:00', color: '#153630'},
                             { title: 'Wedding! <3', start: '2022-07-12T00:00:00', end: '2022-07-12T23:59:59', color: '#153630', textColor: 'white', display: 'background'},
                             { title: 'Breakfast', start: '2022-07-13T09:30:00', end: '2022-07-13T11:00:00', color: '#153630'},
-                            { title: 'Fun Group Activity #2 (click me!)', start: '2022-07-13T11:00:00', end: '2022-07-13T12:30:00', color: '#153630'},
+                            { title: 'Fun Group Activity #2 (click me!)', start: '2022-07-13T11:00:00', end: '2022-07-13T13:30:00', color: '#153630'},
                             { title: 'Lunch', start: '2022-07-13T13:30:00', end: '2022-07-13T14:30:00', color: '#153630'},
                             /**
                              * Wedding Day Events
