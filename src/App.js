@@ -6,6 +6,11 @@ import Header from './Components/Models/Header';
 import mountains from './images/brown_mountains.png';
 import Footer from './Components/Models/Footer';
 
+// PrimeReact Styles
+import 'primeicons/primeicons.css';
+import 'primereact/resources/themes/saga-blue/theme.css';
+import 'primereact/resources/primereact.css';
+
 export const App = () => {
   const handleAddToHomescreenClick = () => {
     alert(`
