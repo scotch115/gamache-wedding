@@ -18,9 +18,7 @@ export const Schedule = () => {
     return (
         <>
             <div>          
-                <div style={{backgroundColor: "#153630", color: "white", textAlign: "center", paddingTop: "2vh", paddingBottom: "1vh"}}>
-                    <Header />
-                </div>
+                <Header />
                 <div
                     style={{
                         position: 'relative',

@@ -8,9 +8,7 @@ export const Photos = () => {
 
     return (  
         <div>          
-        <div style={{backgroundColor: "#153630", color: "white", textAlign: "center", paddingTop: "2vh", paddingBottom: "1vh"}}>
         <Header />
-        </div>
         <div id="target_div" style={{width: '100%', height: '8000px'}}>
             <iframe
                 title="zola_photo_library"

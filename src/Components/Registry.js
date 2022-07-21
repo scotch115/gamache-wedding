@@ -7,9 +7,7 @@ import Footer from './Models/Footer';
 export const Registry = () => {
   return (
     <div>
-      <div style={{backgroundColor: "#153630", color: "white", textAlign: "center", paddingTop: "2vh", paddingBottom: "1vh"}}>
-        <Header />
-      </div>
+      <Header />
       <div style={{ paddingTop: '5%' }}>
       <div style={{ background: 'white' }}>
           <img

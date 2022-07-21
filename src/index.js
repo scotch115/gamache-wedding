@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Schedule from './Components/Schedule';
 import Venue from './Components/Venue'; 
+import Video from './Components/Video';
 import Travel from './Components/Travel';
 import Photos from './Components/Photos';
 import Menu from './Components/Menu';
@@ -19,6 +20,7 @@ const routing = (
         <Route path="/schedule" component={Schedule}/>
         <Route path="/venue" component={Venue} />
         <Route path="/travel" component={Travel} />
+        <Route path="/video" component={Video} />
         <Route path="/photos" component={Photos} />
         <Route path="/menu" component={Menu} />
         <Route path="/registry" component={Registry} />

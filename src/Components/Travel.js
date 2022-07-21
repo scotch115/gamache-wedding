@@ -34,9 +34,7 @@ export const Travel = (props) => {
 
     return (  
         <div>
-            <div style={{backgroundColor: "#153630", color: "white", textAlign: "center", paddingTop: "2vh", paddingBottom: "1vh"}}>
             <Header />
-            </div>
             <div style={{height: '20%' , width: '100%'}}><img src={mountains} alt="mountains"/></div>
             <div className="flights" style={{fontSize: '4vmin'}}>
                 <a style={{textDecoration: 'none', color: 'black'}} href="https://www.google.com/travel/flights/search?tfs=CBwQAhoeagcIARIDTUNPEgoyMDIxLTA3LTExcgcIARIDQ09TGh5qBwgBEgNDT1MSCjIwMjEtMDctMTRyBwgBEgNNQ09wAYIBCwj___________8BQAFIAZgBAQ&tfu=GgA">Orlando ✈️ Colorado Springs</a>
